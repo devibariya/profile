@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profile — Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Profile page with skills, contact and a modern UI">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <p>HEY </p>
+    <main class="container">
+        <section class="card profile-card">
+            <div style="position:relative;">
+                <div class="avatar">
+                    <div class="avatar-inner">
+                        <!-- Inline SVG avatar (acts as placeholder) -->
+                        <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="g" x1="0" x2="1">
+                                    <stop offset="0" stop-color="#7c3aed"/>
+                                    <stop offset="1" stop-color="#06b6d4"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="128" height="128" rx="24" fill="url(#g)" opacity="0.06" />
+                            <g fill="#cfe9ff">
+                                <circle cx="64" cy="44" r="20" opacity="0.95"/>
+                                <path d="M20 106c6-18 28-28 44-28s38 10 44 28H20z" opacity="0.95"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="name">
+                <h1>Jane Doe</h1>
+                <p class="muted">Frontend Engineer • UI-focused • React & WebGL enthusiast</p>
+                <div class="stats">
+                    <div class="stat"><strong>8</strong> yrs exp</div>
+                    <div class="stat"><strong>50+</strong> projects</div>
+                    <div class="stat"><strong>10</strong> open-source</div>
+                </div>
+                <div class="badges" style="margin-top:10px">
+                    <span class="badge">React</span>
+                    <span class="badge">TypeScript</span>
+                    <span class="badge">WebGL</span>
+                    <span class="badge">Design Systems</span>
+                </div>
+            </div>
+
+            <div class="footer">Based in City, Country · Available for freelance</div>
+        </section>
+
+        <section class="card main-card">
+            <div class="header-row">
+                <div>
+                    <div class="title">About</div>
+                    <p class="description">I'm a frontend engineer building performant, accessible user experiences. I enjoy crafting design systems, animation, and developer tooling that scales.</p>
+                </div>
+                <div class="actions">
+                    <button class="btn">Hire Me</button>
+                    <button class="btn ghost">Portfolio</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">Skills</div>
+                <div class="skills" style="margin-top:10px">
+                    <div class="skill">HTML & CSS</div>
+                    <div class="skill">JavaScript / TypeScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Three.js</div>
+                    <div class="skill">Accessibility</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">Contact</div>
+                <div class="contact" style="margin-top:10px">
+                    <a href="#" title="Email">✉️ Email</a>
+                    <a href="#" title="LinkedIn">🔗 LinkedIn</a>
+                    <a href="#" title="GitHub">🐙 GitHub</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">Recent Work</div>
+                <p class="muted" style="margin-top:10px">Built design system components and an interactive 3D data visualization for a SaaS product.</p>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
